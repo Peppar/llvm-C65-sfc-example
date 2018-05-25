@@ -13,6 +13,9 @@ LIMITATIONS
 
 Global variables have to be defined in boot.asm for now.
 
+The compile script is a Bash script, and might have to be modified
+for use on nonconforming operating systems.
+
 
 BUILDING AND RUNNING
 
@@ -24,9 +27,13 @@ git clone https://github.com/Peppar/llvm-C65-sfc-example.git sfc-example
    wlalink, clang and llvm-mc (from the 65816 compatible Clang
    builds).
 
-3. Run sfc-example/compile.sh
+3. Compile
 
-4. Emulate using your favorite SFC emulator, for example using higan:
-   higan sfc-example/sfc-example.sfc
+cd sfc-example
+./compile.sh
+
+4. Emulate using your favorite SFC emulator, for example with higan:
+
+higan sfc-example/sfc-example.sfc
 
 5. Push A/B/X/Y to change the background color.
