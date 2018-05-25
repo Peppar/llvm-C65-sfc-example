@@ -1,0 +1,5 @@
+[objects]
+boot.o
+main.o
+shift.o
+arith.o
