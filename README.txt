@@ -1,7 +1,7 @@
 Very simple example using the 65816 LLVM backend with Clang to compile to
 an SFC (SNES/Super Nintendo) cartridge ROM.
 
-The backend outputs to the WLAK format, compatible with WLA DX. Since
+The backend outputs to the WLA library format, compatible with WLA DX. Since
 the backend does not have its own linker, we have to download and use
 wlalink for this purpose. We also use wla-65816 since it has some
 very handy macros for defining SFC headers.
@@ -15,6 +15,11 @@ Global variables have to be defined in boot.asm for now.
 
 The compile script is a Bash script, and might have to be modified
 for use on nonconforming operating systems.
+
+
+PREREQUISITES
+
+Build LLVM+Clang with the C65 backend, instructions here: https://github.com/Peppar/llvm-C65
 
 
 BUILDING AND RUNNING
