@@ -5,10 +5,9 @@
 ;; By Oskar Holstensson
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-	.text
+        .text
 
         .globl  memset
-        .type   memset,@function
 memset:
         .index 16
         .accu 16
@@ -31,7 +30,6 @@ memset_exit:
         rts
 
         .globl  c65_mul8
-        .type   c65_mul8,@function
         ;; 8-bit unsigned multiplication
 c65_mul8:
         .index 16
@@ -60,7 +58,6 @@ _c65_mul8_done:
         rts
 
         .globl  c65_mul16
-        .type   c65_mul16,@function
         ;; 16-bit unsigned multiplication
 c65_mul16:
         .index 16
@@ -83,7 +80,6 @@ _c65_mul16_done:
         rts
 
         .globl  c65_mul32
-        .type   c65_mul32,@function
         ;; 32-bit unsigned multiplication
 c65_mul32:
         .index 16
@@ -121,7 +117,6 @@ _c65_mul32_done:
         rts
 
         .globl  c65_mul64
-        .type   c65_mul64,@function
         ;; 64-bit unsigned multiplication
 c65_mul64:
         .index 16
@@ -179,7 +174,6 @@ _c65_mul64_done:
         rts
 
         .globl  c65_udiv8
-        .type   c65_udiv8,@function
         ;; 8-bit by 8-bit unsigned division
 c65_udiv8:
         .index 16
@@ -220,7 +214,6 @@ _c65_udiv8_div3:
         rts
 
         .globl  c65_udiv16
-        .type   c65_udiv16,@function
         ;; 16-bit by 16-bit unsigned division
 c65_udiv16:
         .index 16
@@ -255,7 +248,6 @@ _c65_udiv16_div3:
         rts
 
         .globl  c65_udiv32
-        .type   c65_udiv32,@function
         ;; 32-bit by 32-bit unsigned division
 c65_udiv32:
         .index 16
@@ -300,7 +292,6 @@ _c65_udiv32_div3:
         rts
 
         .globl  c65_udiv64
-        .type   c65_udiv64,@function
         ;; 64-bit by 64-bit unsigned division
 c65_udiv64:
         .index 16
@@ -373,7 +364,6 @@ _c65_udiv64_div3:
         rts
 
         .globl  c65_urem8
-        .type   c65_urem8,@function
         ;; 8-bit by 8-bit unsigned remainder
 c65_urem8:
         .index 16
@@ -415,7 +405,6 @@ _c65_urem8_div3:
         rts
 
         .globl  c65_urem16
-        .type   c65_urem16,@function
         ;; 16-bit by 16-bit unsigned division and remainder
 c65_urem16:
         .index 16
@@ -451,7 +440,6 @@ _c65_urem16_div3:
         rts
 
         .globl  c65_urem32
-        .type   c65_urem32,@function
         ;; 32-bit by 32-bit unsigned division and remainder
 c65_urem32:
         .index 16
@@ -498,7 +486,6 @@ _c65_urem32_div3:
         rts
 
         .globl  c65_urem64
-        .type   c65_urem64,@function
         ;; 64-bit by 64-bit unsigned division and remainder
 c65_urem64:
         .index 16
@@ -575,7 +562,6 @@ _c65_urem64_div3:
         rts
 
         .globl  c65_udivrem8
-        .type   c65_udivrem8,@function
         ;; 8-bit by 8-bit unsigned division
 c65_udivrem8:
         .index 16
@@ -619,7 +605,6 @@ _c65_udivrem8_div3:
 
 
         .globl  c65_udivrem16
-        .type   c65_udivrem16,@function
         ;; 16-bit by 16-bit unsigned division and remainder
 c65_udivrem16:
         .index 16
@@ -656,7 +641,6 @@ _c65_udivrem16_div3:
         rts
 
         .globl  c65_udivrem32
-        .type   c65_udivrem32,@function
         ;; 32-bit by 32-bit unsigned division
 c65_udivrem32:
         .index 16
@@ -706,7 +690,6 @@ _c65_udivrem32_div3:
         rts
 
         .globl  c65_udivrem64
-        .type   c65_udivrem64,@function
         ;; 64-bit by 64-bit unsigned division and remainder
 c65_udivrem64:
         .index 16

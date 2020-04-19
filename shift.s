@@ -5,10 +5,9 @@
 ;; By Oskar Holstensson
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-	.text
+        .text
 
         .globl  c65_shl8
-        .type   c65_shl8,@function
         ;; 8-bit shift left
 .quorve:
 c65_shl8:
@@ -34,7 +33,6 @@ c65_shl8:
         rts
 
         .globl  c65_shl16
-        .type   c65_shl16,@function
         ;; 16-bit shift left
 c65_shl16:
         .index 16
@@ -57,7 +55,6 @@ c65_shl16:
         rts
 
         .globl  c65_shl32
-        .type   c65_shl32,@function
         ;; 32-bit shift left
 c65_shl32:
         .index 16
@@ -81,7 +78,6 @@ c65_shl32:
         rts
 
         .globl  c65_shl64
-        .type   c65_shl64,@function
         ;; 64-bit shift left
 c65_shl64:
         .index 16
@@ -107,7 +103,6 @@ c65_shl64:
         rts
 
         .globl  c65_lshr8
-        .type   c65_lshr8,@function
         ;; 8-bit logical shift right (unsigned)
 c65_lshr8:
         .index 16
@@ -132,7 +127,6 @@ c65_lshr8:
         rts
 
         .globl  c65_lshr16
-        .type   c65_lshr16,@function
         ;; 16-bit logical shift right (unsigned)
 c65_lshr16:
         .index 16
@@ -155,7 +149,6 @@ c65_lshr16:
         rts
 
         .globl  c65_lshr32
-        .type   c65_lshr32,@function
         ;; 32-bit logical shift right (unsigned)
 c65_lshr32:
         .index 16
@@ -179,7 +172,6 @@ c65_lshr32:
         rts
 
         .globl  c65_lshr64
-        .type   c65_lshr64,@function
         ;; 64-bit logical shift right (unsigned)
 c65_lshr64:
         .index 16
@@ -205,7 +197,6 @@ c65_lshr64:
         rts
 
         .globl  c65_ashr8
-        .type   c65_ashr8,@function
         ;; 8-bit arithmetic shift right (signed)
 c65_ashr8:
         .index 16
@@ -245,7 +236,6 @@ _c65_ashr8_neg:
         rts
 
         .globl  c65_ashr16
-        .type   c65_ashr16,@function
         ;; 16-bit arithmetic shift right (signed)
 c65_ashr16:
         .index 16
@@ -281,7 +271,6 @@ _c65_ashr16_neg:
         rts
 
         .globl  c65_ashr32
-        .type   c65_ashr32,@function
         ;; 32-bit arithmetic shift right (signed)
 c65_ashr32:
         .index 16
@@ -319,7 +308,6 @@ _c65_ashr32_neg:
         rts
 
         .globl  c65_ashr64
-        .type   c65_ashr64,@function
         ;; 64-bit arithmetic shift right (signed)
 c65_ashr64:
         .index 16
